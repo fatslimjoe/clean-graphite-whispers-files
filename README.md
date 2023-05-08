@@ -40,3 +40,21 @@ optional arguments:
                         /var/log/graphite_cleanup_yyyy_mm_dd.log
   -s, --show            Show me output of each deleted file!
 ```
+
+Example output:
+
+```
+...
+...
+...
+[2023-05-08 15:08:54] /opt/graphite/storage/whisper/_tagged/109/009/1090094f75a9b7612088c2be04b0ac3fc2ec930f5072c4597e8def34e638f449.wsp (age: 576.9 days, last update: 2021-10-08 14:36:40)
+[2023-05-08 15:08:54] Deleted /opt/graphite/storage/whisper/_tagged/109/009/1090094f75a9b7612088c2be04b0ac3fc2ec930f5072c4597e8def34e638f449.wsp!
+[2023-05-08 15:08:54] /opt/graphite/storage/whisper/_tagged/109/2c6/1092c64ca4d605d7737d68d1a7d1cf3f600778799174c9d1185e7b505c17e184.wsp (age: 563.2 days, last update: 2021-10-22 08:58:35)
+[2023-05-08 15:08:54] Deleted /opt/graphite/storage/whisper/_tagged/109/2c6/1092c64ca4d605d7737d68d1a7d1cf3f600778799174c9d1185e7b505c17e184.wsp!
+[2023-05-08 15:08:54] /opt/graphite/storage/whisper/_tagged/109/9dd/1099dd0f05ae6ac4a20c915bf4f52abf57b6666d34e356edd8257cdfbc59a6ab.wsp (age: 563.0 days, last update: 2021-10-22 12:29:35)
+[2023-05-08 15:08:54] Deleted /opt/graphite/storage/whisper/_tagged/109/9dd/1099dd0f05ae6ac4a20c915bf4f52abf57b6666d34e356edd8257cdfbc59a6ab.wsp!
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Total Deleted whisper files 733655, Total deleted size: 146764.98 MB, Total size of all whisper files: 203.113675 GB, Ratio: 70.56% deleted
+```
+### Have Fun! :)
