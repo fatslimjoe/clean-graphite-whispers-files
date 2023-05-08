@@ -37,8 +37,6 @@ def main():
 		log_filename = f"/var/log/graphite_cleanup_{time.strftime('%Y_%m_%d')}.log"
 		logging.basicConfig(filename=log_filename, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-	root_directory = '/opt/graphite/storage/whisper/'
-
 	# Get the current time in seconds since the epoch
 	current_time = time.time()
 
