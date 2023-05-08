@@ -1,7 +1,7 @@
 # clean-graphite-whispers-files
 Purge stale Whisper’s files with clean-graphite-whisper-files.py
 
-We have developed a new graphite cleaner script specifically designed to purge old stale whisper data. The existing community scripts were not well-suited for our environment as they generated some warnings and were written in Python 2. Furthermore, they lacked information about the age of stale graphite files, which could be useful in our case.
+We have developed a new graphite cleaner micro script specifically designed to purge old stale whisper data. The existing community scripts were not well-suited for our environment as they generated some warnings and were written in Python 2. Furthermore, they lacked information about the age of stale graphite files, which could be useful in our case.
 
 Before you begin using the script, please verify the path of your interpreter. Usually, the default path is: `#!/usr/bin/python3`
 
