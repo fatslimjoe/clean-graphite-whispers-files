@@ -19,7 +19,7 @@ Exercise caution when using the -l argument, which enables logging and stores lo
 
 Example,
 
-`./clean-graphite-whisper-files.py -s -p /opt/graphite/storage/whisper --dry-run`
+`./clean-graphite-whispers-files.py -s -p /opt/graphite/storage/whisper --dry-run`
 
 To find more option, you can use -h argument:
 
