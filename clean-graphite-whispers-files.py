@@ -94,11 +94,12 @@ def main():
 						if args.log and args.dry_run:
 							logging.info(f"{file_path} (no_update_days: {file_age/86400:.1f} days last_update: {formatted_time})")
 
-						if args.show:
+						if args.show and args.dry_run:
 							print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] {file_path} (no_update_days: {file_age/86400:.1f} days, last_update: {formatted_time})")
 
 						if not args.dry_run:
-							print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Deleted {file_path}! (no_update_days: {file_age/86400:.1f} days, last_update: {formatted_time})")
+							if args.show:
+								print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Deleted {file_path}! (no_update_days: {file_age/86400:.1f} days, last_update: {formatted_time})")
 							logging.info(f"[Deleted {file_path}! (no_update_days: {file_age/86400:.1f} days, last_update: {formatted_time})")
 		
 		# Record end time
@@ -109,9 +110,12 @@ def main():
 		# Format the duration as hh:mm:ss
 		duration_formatted = str(duration_timedelta)
 
-		if args.show:
+		if args.show and args.dry_run:
 			print("\n-----------------------------------------------------------------------------------------------------------------------------------------")
-		print(f"Total Deleted whisper files {counter}, Total deleted size: {total_del_size/(1024*1024):.2f} MB, Total size of all whisper files: {total_size/(1024*1024*1024):.6f} GB, Ratio: {float(float(total_del_size)/float(total_size))*100:.2f}% deleted, Script duration: {duration_formatted}")
+			print(f"Total old stale whisper files {counter}, Total size of old stale whisper files: {total_del_size/(1024*1024):.2f} MB, Total size of all whisper files: {total_size/(1024*1024*1024):.6f} GB, Ratio: {float(float(total_del_size)/float(total_size))*100:.2f}% deleted, Script duration: {duration_formatted}")
+		else:
+			print(f"Total deleted whisper files {counter}, Total deleted size: {total_del_size/(1024*1024):.2f} MB, Total size of all whisper files: {total_size/(1024*1024*1024):.6f} GB, Ratio: {float(float(total_del_size)/float(total_size))*100:.2f}% deleted, Script duration: {duration_formatted}")
+		
 		if args.log:
 			logging.info(f"Report: Total Deleted whisper files {counter}, Total deleted size: {total_del_size/(1024*1024):.2f} MB, Total size of all whisper files: {total_size/(1024*1024*1024):.6f} GB, Ratio: {float(float(total_del_size)/float(total_size))*100:.2f}% deleted, Script duration: {duration_formatted}")
 	
