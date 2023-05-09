@@ -10,11 +10,11 @@ The script uses standard Python 3 libraries, so there is no need to install addi
 ## IMPORTANT
 
 
-Before using the script, it is recommended to estimate the total size of your stale whisper files. You can use the --dry-run option, which will not take any action but will provide a summary of what should be deleted.
+Before using the script, always make a backup. You will be using the script at your own responsibility. It is recommended to estimate the total size of your stale whisper files. You can use the `--dry-run` option, which will not take any action but will provide a summary of what should be deleted.
 
 If you have a large number of files and the whisper files are not on a separate disk, it may significantly impact the performance of your Graphite server due to high disk I/O. Therefore, it is recommended to execute the script in parts, gradually reducing the number of '--days' parameter each time.
 
-Exercise caution when using the -l argument, which enables logging and stores logs in /var/log/graphite_cleanup_yyyy_mm_dd.log. This can result in additional disk I/O and potentially affect the performance of your Graphite server and could use a lot of additional storage place.
+Exercise caution when using the `-l` argument, which enables logging and stores logs in `/var/log/graphite_cleanup_yyyy_mm_dd.log`. This can result in additional disk I/O and potentially affect the performance of your Graphite server and could use a lot of additional storage place.
 
 
 ## Usage
