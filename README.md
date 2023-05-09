@@ -43,7 +43,8 @@ optional arguments:
 
 More examples:
 
-Without `--dry-run` or `-i` parametar `./clean-graphite-whispers-files.py -d 365 -p /opt/graphite/storage/whisper -s`
+Without `--dry-run` or `-i` parametar: 
+`./clean-graphite-whispers-files.py -d 365 -p /opt/graphite/storage/whisper -s`
 
 ```
 ...
@@ -56,7 +57,8 @@ Total Deleted whisper files 2256, Total deleted size: 450.63 MB, Total size of a
 
 ```
 
-With `--dry-run` or `-i` parametar `./clean-graphite-whispers-files.py -d 365 -p /opt/graphite/storage/whisper -s -i`
+With `--dry-run` or `-i` parametar 
+`./clean-graphite-whispers-files.py -d 365 -p /opt/graphite/storage/whisper -s -i`:
 
 ```
 ...
