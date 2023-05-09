@@ -1,5 +1,3 @@
-# clean-graphite-whispers-files
-
 ![Screenshot](clean_graphite_whispers.png)
 
 Purge stale Whisper’s files with clean-graphite-whisper-files.py
