@@ -19,7 +19,7 @@ Exercise caution when using the -l argument, which enables logging and stores lo
 
 Example,
 
-`./clean-graphite-whispers-files.py -d 365 -p /opt/graphite/storage/whisper -s -i`
+`./clean-graphite-whispers-files.py -h`
 
 To find more option, you can use -h argument:
 
@@ -41,7 +41,7 @@ optional arguments:
   -s, --show            Show me output of each deleted file!
 ```
 
-Example output:
+More examples:
 
 Without `--dry-run` or `-i` parametar `./clean-graphite-whispers-files.py -d 365 -p /opt/graphite/storage/whisper -s`
 
