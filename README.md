@@ -47,14 +47,10 @@ Example output:
 ...
 ...
 ...
-[2023-05-08 15:08:54] /opt/graphite/storage/whisper/_tagged/109/009/1090094f75a9b7612088c2be04b0ac3fc2ec930f5072c4597e8def34e638f449.wsp (age: 576.9 days, last update: 2021-10-08 14:36:40)
-[2023-05-08 15:08:54] Deleted /opt/graphite/storage/whisper/_tagged/109/009/1090094f75a9b7612088c2be04b0ac3fc2ec930f5072c4597e8def34e638f449.wsp!
-[2023-05-08 15:08:54] /opt/graphite/storage/whisper/_tagged/109/2c6/1092c64ca4d605d7737d68d1a7d1cf3f600778799174c9d1185e7b505c17e184.wsp (age: 563.2 days, last update: 2021-10-22 08:58:35)
-[2023-05-08 15:08:54] Deleted /opt/graphite/storage/whisper/_tagged/109/2c6/1092c64ca4d605d7737d68d1a7d1cf3f600778799174c9d1185e7b505c17e184.wsp!
-[2023-05-08 15:08:54] /opt/graphite/storage/whisper/_tagged/109/9dd/1099dd0f05ae6ac4a20c915bf4f52abf57b6666d34e356edd8257cdfbc59a6ab.wsp (age: 563.0 days, last update: 2021-10-22 12:29:35)
-[2023-05-08 15:08:54] Deleted /opt/graphite/storage/whisper/_tagged/109/9dd/1099dd0f05ae6ac4a20c915bf4f52abf57b6666d34e356edd8257cdfbc59a6ab.wsp!
+[2023-05-09 09:23:28] Deleted /opt/graphite/storage/whisper/icinga2/s1_local/host/hostalive/perfdata/rta/warn.wsp! (no_update_days: 1103.4 days, last_update: 2020-04-30 23:10:40)
+[2023-05-09 09:23:28] Deleted /opt/graphite/storage/whisper/icinga2/s1_local/host/hostalive/perfdata/rta/value.wsp! (no_update_days: 1103.4 days, last_update: 2020-04-30 23:10:40)
+[2023-05-09 09:23:28] Deleted /opt/graphite/storage/whisper/icinga2/s1_local/host/hostalive/perfdata/rta/crit.wsp! (no_update_days: 1103.4 days, last_update: 2020-04-30 23:10:40)
+Total Deleted whisper files 2256, Total deleted size: 450.63 MB, Total size of all whisper files: 198.460124 GB, Ratio: 0.22% deleted, Script duration: 0:03:40.065513
 
------------------------------------------------------------------------------------------------------------------------------------------
-Total Deleted whisper files 733655, Total deleted size: 146764.98 MB, Total size of all whisper files: 203.113675 GB, Ratio: 70.56% deleted
 ```
 ### Have Fun! :)
