@@ -19,7 +19,7 @@ Exercise caution when using the -l argument, which enables logging and stores lo
 
 Example,
 
-`./clean-graphite-whispers-files.py -s -p /opt/graphite/storage/whisper --dry-run`
+`./clean-graphite-whispers-files.py -d 365 -p /opt/graphite/storage/whisper -s -i`
 
 To find more option, you can use -h argument:
 
@@ -43,6 +43,8 @@ optional arguments:
 
 Example output:
 
+Without `--dry-run` or `-i` parametar `./clean-graphite-whispers-files.py -d 365 -p /opt/graphite/storage/whisper -s`
+
 ```
 ...
 ...
@@ -53,4 +55,12 @@ Example output:
 Total Deleted whisper files 2256, Total deleted size: 450.63 MB, Total size of all whisper files: 198.460124 GB, Ratio: 0.22% deleted, Script duration: 0:03:40.065513
 
 ```
+
+With `--dry-run` or `-i` parametar `./clean-graphite-whispers-files.py -d 365 -p /opt/graphite/storage/whisper -s -i`
+
+```
+[2023-05-09 15:01:41] /opt/graphite/storage/whisper/_tagged/e00/319/e00319b44cb16e60e9c8eaa1213beabce813998bbee8aa328440361d23e75300.wsp (no_update_days: 1336.1 days, last_update: 2019-09-11 12:37:53)
+Total old stale whisper files 26975, Total size of old stale whisper files: 5361.13 MB, Total size of all whisper files: 203.220223 GB, Ratio: 2.58% to be deleted, Script duration: 0:05:42.421645
+```
+
 ### Have Fun! :)
