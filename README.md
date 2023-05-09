@@ -5,6 +5,8 @@ We have developed a new graphite cleaner micro script specifically designed to p
 
 Before you begin using the script, please verify the path of your interpreter. Usually, the default path is: `#!/usr/bin/python3`
 
+The script uses standard Python 3 libraries, so there is no need to install additional Python 3 packages.
+
 ## IMPORTANT
 
 
