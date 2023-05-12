@@ -15,6 +15,10 @@ Before using the script, always make a backup. You will be using the script at y
 
 If you have a large number of files and the whisper files are not on a separate disk, it may significantly impact the performance of your Graphite server due to high disk I/O. Therefore, it is recommended to execute the script in parts, gradually reducing the number of '--days' parameter each time.
 
+Below is screenshot from our prometheus/grafana solution, information about diskio:
+
+![Screenshot](deleting_whisper_files.png)
+
 Exercise caution when using the `-l` argument, which enables logging and stores logs in `/var/log/graphite_cleanup_yyyy_mm_dd.log`. This can result in additional disk I/O and potentially affect the performance of your Graphite server and could use a lot of additional storage place.
 
 
@@ -70,8 +74,5 @@ With `--dry-run` or `-i` parametar
 [2023-05-09 15:01:41] /opt/graphite/storage/whisper/_tagged/e00/319/e00319b44cb16e60e9c8eaa1213beabce813998bbee8aa328440361d23e75300.wsp (no_update_days: 1336.1 days, last_update: 2019-09-11 12:37:53)
 Total old stale whisper files 26975, Total size of old stale whisper files: 5361.13 MB, Total size of all whisper files: 203.220223 GB, Ratio: 2.58% to be deleted, Script duration: 0:05:42.421645
 ```
-Below is screenshot from our prometheus/grafana solution, information about diskio:
-
-![Screenshot](deleting_whisper_files.png)
 
 ### Have Fun! :)
