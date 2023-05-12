@@ -70,5 +70,7 @@ With `--dry-run` or `-i` parametar
 [2023-05-09 15:01:41] /opt/graphite/storage/whisper/_tagged/e00/319/e00319b44cb16e60e9c8eaa1213beabce813998bbee8aa328440361d23e75300.wsp (no_update_days: 1336.1 days, last_update: 2019-09-11 12:37:53)
 Total old stale whisper files 26975, Total size of old stale whisper files: 5361.13 MB, Total size of all whisper files: 203.220223 GB, Ratio: 2.58% to be deleted, Script duration: 0:05:42.421645
 ```
+Below is screenshot from our prometheus/grafana solution, information about diskio
+![Screenshot](clean_graphite_whispers.png)
 
 ### Have Fun! :)
