@@ -71,6 +71,6 @@ With `--dry-run` or `-i` parametar
 Total old stale whisper files 26975, Total size of old stale whisper files: 5361.13 MB, Total size of all whisper files: 203.220223 GB, Ratio: 2.58% to be deleted, Script duration: 0:05:42.421645
 ```
 Below is screenshot from our prometheus/grafana solution, information about diskio
-![Screenshot](clean_graphite_whispers.png)
+![Screenshot](deleting_whisper_files.png)
 
 ### Have Fun! :)
